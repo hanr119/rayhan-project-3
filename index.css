@@ -1,0 +1,98 @@
+body {
+    background-image: url("./assets/worldmap.svg");
+    background-color: #8FB8BC;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: futura-pt, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* font-family: futura-pt-bold, sans-serif;
+    font-weight: 700;
+    font-style: normal; */
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    background: #DDE2C6BF;
+    width: 50vw;
+    height: 50vw;
+    max-width: 500px;
+    max-height: 500px;
+    min-width: 300px;
+    min-height: 300px;
+    border-radius: 700px;
+    border: 3px black dotted;
+    position: absolute;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.title {
+    font-family: chauncy-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #08091BBF;
+    font-size: calc(40px + 1.5vw);
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.randompick {
+    color: #E6EED6;
+    font-size: calc(15px + 1vw);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+}
+
+.selfpick {
+    color: #E6EED6;
+    font-size: calc(15px + 1vw);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+}
+
+#image {
+    position: absolute;
+    width: 100px;
+    height: auto;
+  }
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-position: center top;
+    }
+    .randompick {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        left: 48%;
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+        bottom: 15%;
+    }
+    .selfpick {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        left: 52%;
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+        bottom: 5%;
+    }
+}
+

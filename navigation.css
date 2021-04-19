@@ -1,0 +1,94 @@
+body {
+    background-color: #E6EED6;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: futura-pt, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* font-family: futura-pt-bold, sans-serif;
+    font-weight: 700;
+    font-style: normal; */
+}
+
+.plane {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    max-width: 456px;
+    padding: 2px;
+}
+
+.container {
+    background-color: #DDE2C6;
+    padding: 12%;
+    height: 4vw;
+    max-height: 275px;
+    width: 70%;
+    border-radius: 10px;
+    margin: 0;
+    margin-top: 2vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.where {
+    font-family: 'Space Mono', monospace;
+    font-size: calc(29px + 1.5vw);;
+    color: #0F5257;
+    position: absolute;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+input {
+    font-size: calc(29px + 1.5vw);
+    font-family: futura-pt, sans-serif;
+    color: #BBC5AA;
+    text-decoration: underline;
+    border: #DDE2C600;
+    border-radius: 0%;
+    background-color: #DDE2C600;
+}
+
+.submit-button {
+    background-color: #3B3D43;
+    position: fixed;
+    left: 50%;
+    bottom: -60px;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    width: 231px;
+    height: 153px;
+}
+
+.go {
+    font-size: 24px;
+    color: #E6EED6;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    font-family: futura-pt, sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        height: 30vw;
+    }
+    .where {
+        font-size: 3vw;
+    }
+}
