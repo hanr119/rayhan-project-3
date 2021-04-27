@@ -1,0 +1,32 @@
+body {
+    background-color: #E6EED6;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: futura-pt, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.title {
+    font-size: calc(29px + 1.5vw);
+    font-family: futura-pt, sans-serif;
+    color: #BBC5AA;
+    text-align: center;
+}
+
+.container {
+    background-color: #8FB8BC;
+    border-radius: 50px;
+    padding: 12%;
+    width: 70vw;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    height: 40vh;
+    margin-top: 2vw;
+}
+

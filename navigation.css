@@ -12,6 +12,15 @@ body {
     font-style: normal; */
 }
 
+.home-icon {
+    position:absolute;
+    top:0;
+    left:0;
+    height: 40px;
+    padding: 20px;
+    filter: invert(24%) sepia(8%) saturate(501%) hue-rotate(187deg) brightness(91%) contrast(94%);
+}
+
 .plane {
     display: block;
     margin-left: auto;
@@ -39,9 +48,12 @@ body {
 
 .where {
     font-family: 'Space Mono', monospace;
-    font-size: calc(29px + 1.5vw);;
+    font-size: calc(29px + 1.5vw);
+    display: flex;
+    width: 100%;
     color: #0F5257;
     position: absolute;
+    justify-content: center;
     align-items: center;
     top: 50%;
     left: 50%;
@@ -50,16 +62,16 @@ body {
     transform: translateX(-50%) translateY(-50%);
 }
 
-input {
+.continent-input {
+    border: none;
+    border-bottom: 2px solid #BBC5AA;
+    width: auto;
     font-size: calc(29px + 1.5vw);
     font-family: futura-pt, sans-serif;
     color: #BBC5AA;
-    text-decoration: underline;
-    border: #DDE2C600;
-    border-radius: 0%;
-    background-color: #DDE2C600;
+    background-color: transparent;
 }
-
+   
 .submit-button {
     background-color: #3B3D43;
     position: fixed;
@@ -90,5 +102,11 @@ input {
     }
     .where {
         font-size: 3vw;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .continent-input {
+        font-size: calc(10px + 1.5vw);
     }
 }
