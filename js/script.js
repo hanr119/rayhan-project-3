@@ -6,7 +6,7 @@
 var Airtable = require("airtable");
 // console.log(Airtable);
 
-// connect airtable base to website using API key which should be private to avoide hacking
+// connect airtable base to website upostcardg API key which should be private to avoide hacking
 var base = new Airtable({ apiKey: "keyvXWve8WWEVE4xq" }).base(
 "app5Jrg21YJ7vBuV7"
 );
@@ -39,7 +39,12 @@ function gotAllPostcards(err) {
   
     // call functions to log and show the songs
     consoleLogPostcards();
-    showPostcards();
+    // showPostcards();
+    try {
+      showPostcards();
+    } catch(e) {
+      console.error(e);
+    }
 }
 
   // just loop through the songs and console.log them
@@ -52,20 +57,37 @@ function consoleLogPostcards() {
   // loop through airtable data, and display them onto our page
 function showPostcards() {
     console.log("showPostcards()");
-    postcards.forEach((postcard) => {
-        // adding song title to page
-        var postcardTitle = document.createElement("h1");
-        postcardTitle.innerText = postcard.fields.city;
-        document.body.appendChild(postcardTitle);
 
-        // adding artist name to page
-        var postcardDate = document.createElement("h1");
-        postcardDate.innerText = postcard.fields.date_founded;
-        document.body.appendChild(postcardDate);
+    // create new storage for postcards, for postcards data
+    localStorage.setItem('postcards',JSON.stringify(postcards))
 
-        // adding artist image to page
-        var  postcardImage = document.createElement("img");
-        postcardImage.src = postcard.fields.postcard_image[0].url;
-        document.querySelector(".container").append(postcardImage);
+    // console.log(localStorage)
+
+    postcards.forEach((postcard, index) => {
+
+       // create postcard container, add image to it
+      var postcardContainer  = document.createElement("img");
+       postcardContainer.classList.add('postcard-container');
+
+       // index number is added to each card
+       postcardContainer.classList.add('postcard'+index);
+       postcardContainer.src = postcard.fields.postcard_image[0].url;
+       
+      // add postcards to main container div
+       document.querySelector(".container").append(postcardContainer);
+
     });
+}
+
+
+// if user clicks on postcard container, set item to that container
+document.onclick = (event)=>{
+  if (event.target.classList.contains('postcard-container')){
+
+    // the index is updated to the card selected
+    localStorage.setItem('index', event.target.classList[1].split('d')[1])
+
+    // redirect to new page
+    window.location = 'page.html'
+  }
 }
