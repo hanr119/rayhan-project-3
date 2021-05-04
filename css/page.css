@@ -36,34 +36,42 @@ div:not(:first-child) img {
     display: flex;
     align-items: center;
     position: relative;
+    justify-content: center;
 }
 
 .info-text {
     display: inline-block;
     text-align: justify;
-    margin-left: 10vw;
     font-family: 'Space Mono', monospace;
     font-weight: bold;
     text-transform: uppercase;
     color: #8FB8BC;
     line-height: 1.5rem;
-    margin-top: -200px;
+    padding-left: 20px;
 }
 
 .message {
-    position: absolute;
     height: 153px;
     width: 231px;
     background: #3B3D43;
-    right: 400px;
-    bottom: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 30px;
 }
 
 a{
     color: #E6EED6;
     text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .message {
+        height: 100px;
+        width: 160px;
+    }
+    .info-text {
+        padding-left: 10px;
+    }
 }
 
