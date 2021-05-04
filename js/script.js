@@ -91,3 +91,4 @@ document.onclick = (event)=>{
     window.location = 'page.html'
   }
 }
+
