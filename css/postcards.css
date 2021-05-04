@@ -1,0 +1,37 @@
+body {
+    background-color: #E6EED6;
+    font-family: futura-pt, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.home-icon {
+    position:absolute;
+    top:0;
+    left:0;
+    height: 40px;
+    padding: 20px;
+    filter: invert(24%) sepia(8%) saturate(501%) hue-rotate(187deg) brightness(91%) contrast(94%);
+}
+
+.title {
+    font-family: futura-pt, sans-serif;
+    font-size: calc(29px + 1.5vw);
+    font-weight: 500;
+    color: #BBC5AA;
+    text-align: center;
+    padding: 30px;
+    padding-bottom: 0;
+}
+
+div:not(:first-child) img {
+    width: 28vw;
+    padding: 20px;
+}
+
+.container {
+    text-align: center;
+    background-color: #8FB8BC;
+    margin: 40px;
+    border-radius: 20px;
+}

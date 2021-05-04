@@ -7,18 +7,25 @@
     <title>Message Page</title>
     <link rel="stylesheet" type="text/css" href="./css/reset.css">
 
-    <link rel="stylesheet" type="text/css" href="./css/main.css">
-
+    <link rel="stylesheet" type="text/css" href="./css/message.css">
+    <link rel="stylesheet" href="https://use.typekit.net/wbk6hzp.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <!-- add link to your javascript. be sure it includes "defer" -->
     <script type="text/javascript" src="./airtable.browser.js" defer></script>
     <script type="text/javascript" src="./js/message.js" defer></script>
 </head>
 <body>
-    <form id="messageForm">
-      <textarea class="textmessage" rows="4" cols="50" name="comment" form="messageForm">
-      WRITE YOUR MESSAGE HERE...</textarea>
-      <button type="submit" class="js-submit">FINISH</button>
-    </form>
-        
+    <a href="index.html">
+      <img src="assets/home.svg" class="home-icon" alt="homepage"></img>
+    </a>
+    <div class="title">your postcard</div>
+    <div class="form">
+      <form id="messageForm">
+        <textarea class="textmessage" rows="20" cols="1000" name="comment" form="messageForm">
+        WRITE YOUR MESSAGE HERE...</textarea>
+      </form>
+      <button type="submit" class="js-submit" form="my-form">FINISH</button>
+    </div>
 </body>
 </html>

@@ -1,0 +1,73 @@
+body {
+    background-color: #E6EED6;
+    font-family: futura-pt, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.home-icon {
+    position:absolute;
+    top:0;
+    left:0;
+    height: 40px;
+    padding: 20px;
+    filter: invert(24%) sepia(8%) saturate(501%) hue-rotate(187deg) brightness(91%) contrast(94%);
+}
+
+.message-icon {
+    position:absolute;
+    top:0;
+    left:50px;
+    height: 45px;
+    padding: 20px;
+    filter: invert(24%) sepia(8%) saturate(501%) hue-rotate(187deg) brightness(91%) contrast(94%);
+}
+
+.title {
+    font-family: futura-pt, sans-serif;
+    font-size: calc(29px + 1.5vw);
+    font-weight: 500;
+    color: #BBC5AA;
+    text-align: center;
+    padding: 30px;
+    padding-bottom: 0;
+}
+
+.finish {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div:not(:first-child):not(:nth-child(2)) img{
+    max-width: 500px;
+    display: inline-block;
+    float: left;
+    width: 100%;
+    max-height: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.message-container {
+    padding: 20px;
+    display: inline-block;
+    background-color: #FEF5E3;
+    width: 40%;
+    height: 100%;
+    overflow-wrap: break-word;
+    text-align: left;
+}
+
+@media only screen and (max-width: 600px) {
+    .finish {
+        padding: 20px;
+        text-align: none;
+        display: inline;
+    }
+    .message-container {
+        width: 85%;
+    }
+}

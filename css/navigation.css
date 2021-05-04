@@ -103,9 +103,6 @@ body {
     .where {
         font-size: 3vw;
     }
-}
-
-@media only screen and (max-width: 600px) {
     .continent-input {
         font-size: calc(10px + 1.5vw);
     }

@@ -72,7 +72,7 @@ function showPostcards() {
        // index number is added to each card
        postcardContainer.classList.add('postcard'+index);
        postcardContainer.src = postcard.fields.postcard_image[0].url;
-       
+
       // add postcards to main container div
        document.querySelector(".container").append(postcardContainer);
 

@@ -1,0 +1,57 @@
+body {
+    background-color: #E6EED6;
+    font-family: futura-pt, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.home-icon {
+    position:absolute;
+    top:0;
+    left:0;
+    height: 40px;
+    padding: 20px;
+    filter: invert(24%) sepia(8%) saturate(501%) hue-rotate(187deg) brightness(91%) contrast(94%);
+}
+
+.title {
+    font-family: futura-pt, sans-serif;
+    font-size: calc(29px + 1.5vw);
+    font-weight: 500;
+    color: #BBC5AA;
+    text-align: center;
+    padding: 30px;
+    padding-bottom: 0;
+}
+
+.textmessage {
+    font-family: 'Space Mono', monospace;
+    line-height: 31px;
+    max-width: 80%;
+    background-color: #8FB8BC;
+    color: #E6EED6;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-image: -webkit-linear-gradient(left, #8FB8BC 10px, transparent 10px), -webkit-linear-gradient(right, #8FB8BC 10px, transparent 10px), -webkit-linear-gradient(#8FB8BC 30px, #ccc 30px, #ccc 31px, white 31px);
+    background-image: -moz-linear-gradient(left, #8FB8BC 10px, transparent 10px), -moz-linear-gradient(right, #8FB8BC 10px, transparent 10px), -moz-linear-gradient(#8FB8BC 30px, #ccc 30px, #ccc 31px, white 31px);
+    background-image: -ms-linear-gradient(left, #8FB8BC 10px, transparent 10px), -ms-linear-gradient(right, #8FB8BC 10px, transparent 10px), -ms-linear-gradient(#8FB8BC 30px, #ccc 30px, #ccc 31px, white 31px);
+    background-image: -o-linear-gradient(left, #8FB8BC 10px, transparent 10px), -o-linear-gradient(right, #8FB8BC 10px, transparent 10px), -o-linear-gradient(#8FB8BC 30px, #ccc 30px, #ccc 31px, white 31px);
+    background-image: linear-gradient(left, #8FB8BC 10px, transparent 10px), linear-gradient(right, #8FB8BC 10px, transparent 10px), linear-gradient(#8FB8BC 30px, #ccc 30px, #ccc 31px, white 31px);
+    background-size: 100% 100%, 100% 100%, 100% 31px;
+}
+
+.js-submit {
+    height: 153px;
+    width: 231px;
+    background: #3B3D43;
+    color: #E6EED6;
+    text-decoration: none;
+    margin: 50px;
+}
+
+.form {
+    margin-top: 100px;
+    width: 100%;
+    text-align: center;
+}
